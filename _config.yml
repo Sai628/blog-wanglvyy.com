@@ -6,7 +6,7 @@
 title: 小颖的窝儿
 # subtitle: However long the night, the dawn will break.
 subtitle: 能自得时还自乐，到无心处便无忧。
-description: 我是一个想当老师的学生 ^_^
+description: 我是一枚老师
 author: Wanglvyy
 language: zh-Hans
 timezone:
@@ -15,7 +15,7 @@ avatar: /images/avatar.jpg
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://wanglvyy.github.io
+url: https://wanglvyy.com
 root: /
 permalink: :year-:month-:day-:title.html
 permalink_defaults:
@@ -80,11 +80,13 @@ tag_generator:
 theme: next
 
 # Deployment
-## Docs: http://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/one-command-deployment.html
 deploy:
-  type: git
-  repo:
-    github: git@github.com:Wanglvyy/wanglvyy.github.io.git,master
-    coding: git@git.coding.net:Wanglvyy/Wanglvyy.git,master
-  name: Wanglvyy
-  email: 673528484@qq.com
+  type: rsync
+  host: air.sai628.com
+  user: root
+  root: /var/www/wanglvyy_com
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: false
