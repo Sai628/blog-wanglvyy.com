@@ -15,7 +15,7 @@ avatar: /images/avatar.jpg
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://wanglvyy.com
+url: https://wanglvyy.tech
 root: /
 permalink: :year-:month-:day-:title.html
 permalink_defaults:
@@ -85,7 +85,7 @@ deploy:
   type: rsync
   host: air.sai628.com
   user: root
-  root: /var/www/wanglvyy_com
+  root: /var/www/wanglvyy_tech
   port: 22
   delete: true
   verbose: true
